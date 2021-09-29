@@ -1,2 +1,2 @@
 #!/bin/bash
-pwd
+diff set.sorted printenv.sorted | grep "<" | awk '{ print $2 }'
