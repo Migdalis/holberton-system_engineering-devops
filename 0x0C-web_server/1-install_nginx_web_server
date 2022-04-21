@@ -5,6 +5,7 @@
 # that contains the string Hello World
 
 apt-get update -y
-apt-get install nginx -y
+apt-get -y install nginx
+chown ubuntu /var/www/html/index.nginx-debian.html
 echo "Hello World" > /var/www/html/index.nginx-debian.html
 service nginx restart
