@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Fix whatever needed to be fixed to run curl port 80
+
+sudo apt update -y
+sudo apt install apache2 -y
+echo "Hello Holberton" > /var/www/html/index.html
+sudo service apache2 start
