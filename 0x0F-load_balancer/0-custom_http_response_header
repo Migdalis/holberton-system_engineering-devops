@@ -3,6 +3,7 @@
 
 sudo apt-get update -y
 sudo apt-get install nginx -y
+sudo chown -R ubuntu /var/www
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo sed -i '/listen 80/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 echo -e "Ceci n'est pas une page\n" > /var/www/html/page_404.html
