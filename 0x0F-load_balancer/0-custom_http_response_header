@@ -10,3 +10,4 @@ echo "Ceci n'est pas une page" > /var/www/html/page_404.html
 sudo sed -i '/server_name _;/a error_page 404 \/page_404.html;\n/' /etc/nginx/sites-available/default
 sudo sed -i '/server_name _;/a add_header X-Served-By $hostname;\n' /etc/nginx/sites-available/default
 sudo service nginx restart
+sudo service nginx reload
