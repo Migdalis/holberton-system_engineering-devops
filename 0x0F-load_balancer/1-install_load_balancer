@@ -8,7 +8,7 @@ sudo apt-get install haproxy -y
 haproxyconfig="\
 frontend http
     bind *:80
-    mode http
+    stats uri /haproxy?stats
     default_backend web-back
 backend web-back
     balance roundrobin
