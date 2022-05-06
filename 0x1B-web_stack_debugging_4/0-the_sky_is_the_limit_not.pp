@@ -6,6 +6,6 @@ exec { 'worker_processes':
 } ->
 
 exec { 'nginx-restart':
-  command  => 'service nginx start',
+  command  => 'sudo service nginx start',
   provider => shell
 }
