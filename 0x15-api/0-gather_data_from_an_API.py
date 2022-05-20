@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Script that returns information about
 TODO list progress for a given employee ID"""
-import sys
 import requests
+import sys
 
 
 if len(sys.argv) == 2:
